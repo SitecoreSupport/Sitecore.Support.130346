@@ -2,7 +2,7 @@
 Enables the possibility to localize validation message for the `Number` field when using ASP.NET MVC Forms
 
 ## Description
-There is no possibility to localize error message which is displayed for the `Number` field if its value is incorrect.
+There is no possibility to localize error message which is displayed for the `Number` field if its value is incorrect.<br/>
 This patch allows to localize the validation message when using ASP.NET MVC Forms
 
 ## License  
