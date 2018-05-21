@@ -4,7 +4,7 @@ using Sitecore.Forms.Mvc.Validators;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Sitecore.Forms.Mvc.Models.Fields
+namespace Sitecore.Support.Forms.Mvc.Models.Fields
 {
   public class NumberField : FieldModel
   {
@@ -24,8 +24,8 @@ namespace Sitecore.Forms.Mvc.Models.Fields
       set;
     }
 
-    [DynamicRange("MinimumValue", "MaximumValue", ErrorMessage = "The number in {0} must be at least {1} and no more than {2}.")]
-    [RegularExpression("^[-,+]{0,1}\\d*\\.{0,1}\\d+$", ErrorMessage = "Field contains an invalid number.")]
+    [DynamicRange("MinimumValue", "MaximumValue")]
+    [DynamicRegularExpression("^[-,+]{0,1}\\d*\\.{0,1}\\d+$", null)]
     [DataType(DataType.Text)]
     public override object Value
     {
